@@ -1,0 +1,51 @@
+﻿@model List<MyPortolio.DAL.Entites.Feature>
+<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="/hola-master/images/home.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    @* https://i.hizliresim.com/5j7va07.jpg *@
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+
+    @foreach(var item in Model)
+    {
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>@item.Title</h3>
+
+                <h1>
+                    @item.Description
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Son Projelerim
+                    </a>
+                    <a href="#about"  class="smoothscroll btn btn--stroke">
+                        Hakkımda Daha Fazlası
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Aşağaı İn</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    }
+ <!-- end home-content -->
+
+    <ul class="home-social">
+        <li>
+            <a href="https://github.com/rasitdemirtas" target="_blank"><i class="im im-github" aria-hidden="true"></i><span>GitHub</span></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/muhammedrasitdemirtas/" target="_blank"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+        </li>
+    </ul>
+    <!-- end home-social -->
+
+</section> <!-- end s-home -->

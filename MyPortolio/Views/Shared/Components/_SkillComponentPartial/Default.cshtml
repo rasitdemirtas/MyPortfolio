@@ -1,0 +1,14 @@
+﻿@model List<MyPortolio.DAL.Entites.Skill>
+<div class="col-six tab-full right">
+    <h3>İlgi Alanlarım</h3>
+
+    <ul class="table">
+        @foreach(var item in Model)
+        {
+            <li>
+                <div class="progress percent"></div>
+                <strong>@item.Title</strong>
+            </li>
+        }       
+    </ul>
+</div>
